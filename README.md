@@ -5,7 +5,7 @@ This is the plugin for using jsimports (http://github.com/knuthelland/jsimports)
 
 Commands:
 
-* `jsimports` [cmd+. cmd+f] or [ctrl+. ctrl+f] Runs jsimports on current file
+* `jsimports` (keybinding: `cmd+. cmd+f` or `ctrl+. ctrl+f`) Runs jsimports on current file
 
 Requirements:
 
