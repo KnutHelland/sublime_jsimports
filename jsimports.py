@@ -5,9 +5,9 @@ import os
 import subprocess
 
 if (sys.version_info[0] == 3):
-	from vendor.diff_match_patch.python3.diff_match_patch import diff_match_patch
+	from jsimports.vendor.diff_match_patch.python3.diff_match_patch import diff_match_patch
 else:
-	from vendor.diff_match_patch.python2.diff_match_patch import diff_match_patch
+	from jsimports.vendor.diff_match_patch.python2.diff_match_patch import diff_match_patch
 
 
 class MergeException(Exception):
