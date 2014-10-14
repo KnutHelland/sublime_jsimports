@@ -86,8 +86,8 @@ class JsimportsCommand(sublime_plugin.TextCommand):
 		with open(tmpName, 'w') as f:
 			f.write(src)
 
-                node = self.view.settings().get('node_path', '/usr/local/bin/node')
-                jsimp = self.view.settings().get('jsimports_path', '/usr/local/bin/jsimports')
+		node = self.view.settings().get('node_path', '/usr/local/bin/node')
+		jsimp = self.view.settings().get('jsimports_path', '/usr/local/bin/jsimports')
 
 		err = ''
 		try:
