@@ -99,6 +99,7 @@ class JsimportsCommand(sublime_plugin.TextCommand):
 		except subprocess.CalledProcessError as e:
 			sublime.status_message("Got error status code " + str(e))
 			os.remove(tmpName);
+			return
 			
 		if err:
 			sublime.status_message("Could not run jsimports " + str(err))
