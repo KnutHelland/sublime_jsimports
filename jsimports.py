@@ -114,6 +114,6 @@ class JsimportsCommand(sublime_plugin.TextCommand):
 		_, err = merge(self.view, vsize, content, edit)
 		if err:
 			msg = 'PANIC: Cannot fmt file. Check your source for errors (and maybe undo any changes).'
-			sublime.error_message("%s: %s: Merge failure: `%s'" % (DOMAIN, msg, err))
+			sublime.error_message("sublime_jsimports: %s: Merge failure: %s" % (msg, err))
 
 
